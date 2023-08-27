@@ -792,6 +792,7 @@ h3.my-profession{
         max-width: 100%;
         position: relative;
         top: 90px;
+        right:20px;
     }
 }
 @media (max-width:754px){
