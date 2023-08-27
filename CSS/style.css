@@ -788,6 +788,7 @@ h3.my-profession{
         max-width: 100%;
     }
     .home .home-img{
+        
         flex: 0 0 20%;
         max-width: 20%;
         position: relative;
@@ -796,6 +797,7 @@ h3.my-profession{
         right: 20px;
         
     }
+
     .home-img::after{
         content: '';
         position: absolute;
@@ -803,8 +805,9 @@ h3.my-profession{
         width: 40px;
         border-bottom: 5px solid var(--skin-color);
         border-right: 5px solid var(--skin-color);
-        right: -320px;
-        bottom: -30px;
+        right: -230px;
+        bottom: -10px;
+        overflow: hidden;
     }
     .home-img::before{
         content: '';
@@ -814,9 +817,14 @@ h3.my-profession{
     
         border-top: 5px solid var(--skin-color);
         border-left: 5px solid var(--skin-color);
-        left: 5px;
-        top: -30px;
+        left: 25px;
+        top: -15px;
         
+    }
+    .home .home-img img{
+        margin-left: 25px;
+        border-radius: 5px;
+        height: 300px;
     }
     
 }
