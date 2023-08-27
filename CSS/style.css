@@ -805,7 +805,7 @@ h3.my-profession{
         width: 40px;
         border-bottom: 5px solid var(--skin-color);
         border-right: 5px solid var(--skin-color);
-        right: -240px;
+        right: -250px;
         bottom: -10px;
         overflow: hidden;
     }
