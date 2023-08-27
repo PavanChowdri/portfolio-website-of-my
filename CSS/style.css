@@ -788,13 +788,25 @@ h3.my-profession{
         max-width: 100%;
     }
     .home .home-img{
-        flex: 0 0 100%;
-        max-width: 100%;
+        flex: 0 0 60%;
+        max-width: 60%;
         position: relative;
         top: 90px;
         margin-bottom: 90px;
+        right: 20px;
         
     }
+    .home-img::after{
+        content: '';
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-bottom: 10px solid var(--skin-color);
+        border-right: 10px solid var(--skin-color);
+        right: -105px;
+        bottom: -30px;
+    }
+    
 }
 @media (max-width:754px){
     .contact .contact-form .col-6,
