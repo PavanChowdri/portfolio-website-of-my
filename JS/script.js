@@ -92,4 +92,26 @@ const nav=document.querySelector(".nav"),
             }
         }
         
+
+  // AUTOMATIC AGE UPDATE
+  function calculateAge(birthdate) {
+    var today = new Date();
+    var birthDate = new Date(birthdate);
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    return age;
+}
+
+function updateAge() {
+    var birthdate = document.getElementById('birthdate').innerText;
+    var age = calculateAge(birthdate);
+    document.getElementById('age').innerText = age;
+}
+
+updateAge();
+
+setInterval(updateAge, 1000); 
        
